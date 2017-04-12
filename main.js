@@ -1,4 +1,4 @@
-function SimpleCarousel(images) {
+function SimpleCarousel(images, targetid) {
     if (!images) {
         throw 'Error: Images source must be an array'
         return false;
@@ -53,7 +53,7 @@ function SimpleCarousel(images) {
         }
 
         function makeCarousel(arr) {
-            document.getElementById('sc-wrapper').innerHTML='<div class="sc sc-carousel"><div class="sc-main-image"></div><div class="sc-previews"></div></div><div class="sc-content"><div class="sc-story"></div></div></div>'
+            document.getElementById(targetid).innerHTML='<div class="sc sc-carousel"><div class="sc-main-image"></div><div class="sc-previews"></div></div><div class="sc-content"><div class="sc-story"></div></div></div>'
             var image = document.createElement('img');
             image.id = "sc-main-image-el";
             image.src = arr[0].src;

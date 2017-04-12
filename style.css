@@ -1,4 +1,4 @@
-#sc-wrapper {
+.sc-wrapper {
     max-width: 900px;
     box-sizing: border-box;
     margin: auto;
@@ -22,7 +22,7 @@
     -webkit-user-select: none;
     -ms-user-select: none;
 }
-#sc-wrapper img{
+.sc-wrapper img{
     display:block;
     max-width: 100%;
 }
