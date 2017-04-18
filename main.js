@@ -1,4 +1,4 @@
-function SimpleCarousel(images, targetid) {
+function SimpleCarousel(targetid, images) {
     if (!images) {
         throw 'Error: Images source must be an array'
         return false;
